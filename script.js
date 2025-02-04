@@ -1,10 +1,19 @@
 //your code here
+const body = document.querySelector("body")
 const div = document.querySelector(".div")
 const img1 = document.querySelectorAll("img")
-// console.log(img1[0]==img1[0])
-div.addEventListener("load",()=>{
-	let x = img1[0] 
-img1[0] = img1[1]
-img1[1] = x
-console.log(img1)
+let a = Math.round(Math.random()*5)
+if(a==0){      
+	a = 1
+}
+let x = document.createElement("img")
+     x.className = `img${a}`               
+	div.insertBefore(x,img1[a])
+let a = []
+div.addEventListener("click",(e)=>{
+	 a = e.target.className
+	 
+	// console.log(e.target==e.target)
 })
+console.log(a)
+console.log(b)
