@@ -19,7 +19,7 @@ let x = document.createElement("img")
 let b = [] 
 let clickHandler = (e)=>{
 	para.textContent = ""
-	h3.textContent = "Please click on the identical tiles to verify that you are not a robot"
+	h3.textContent = "Please click on the identical tiles to verify that you are not a robot."
 	b.push(e.target.className)
 	 if(b.length==1){
 		 reset.style.visibility = "visible"
