@@ -34,9 +34,8 @@ div.addEventListener("click", clickHandler)
 verify.addEventListener("click",()=>{
 	if(b[0]==b[1]){
 		para.textContent = "You are a human. Congratulations!"
-		h3.textContent = ""
 	}else{
-		h3.textContent = "We can't verify you as a human. You selected the non-identical tiles"
+		para.textContent = "We can't verify you as a human. You selected the non-identical tiles"
 		div.addEventListener("click", clickHandler)
 		b = []
 	}
