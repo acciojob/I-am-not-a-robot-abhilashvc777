@@ -8,6 +8,7 @@ const para = document.querySelector("#para")
 const h3 = document.querySelector("#h")
 reset.style.visibility = "hidden"
 verify.style.visibility = "hidden"
+h3.textContent = "Please click on the identical tiles to verify that you are not a robot."
 let a = Math.round(Math.random()*5)
 if(a==0){      
 	a = 1
